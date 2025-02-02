@@ -1,0 +1,21 @@
+
+Docker Commands
+---------------------------
+
+1. systemctl status docker 
+ 	to check the docker status / running or not
+
+2. systemctl start docker
+	to start the docker service
+
+3. systemctl enable docker 
+	to enable the docker image
+
+4. docker images  /  docker image ls
+	to see the all images list in your system
+
+5. docker pull <image_name>
+	to downloade the docker image through the docker hub website
+
+6. docker run -i -t <image_name>
+	to run the image as container format
