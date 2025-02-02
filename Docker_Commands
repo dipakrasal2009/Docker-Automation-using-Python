@@ -1,6 +1,14 @@
 
 Docker Commands
 ---------------------------
+URL of the documentation
+
+//////////////////////////////////////////////////////
+http://docs.docker.com/reference/dockerfile/
+
+https://docs.docker.com/build/concepts/dockerfile/
+
+///////////////////////////////////////////////////////
 
 1. systemctl status docker 
  	to check the docker status / running or not
