@@ -1,0 +1,9 @@
+Docker File Content
+---------------------------
+
+How to wright the docker file
+-----------------------------------
+
+FROM <image_name> = Define the base OS/image for your image
+
+
