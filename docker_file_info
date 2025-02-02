@@ -4,6 +4,28 @@ Docker File Content
 How to wright the docker file
 -----------------------------------
 
-FROM <image_name> = Define the base OS/image for your image
+1.  FROM <image_name> 
+	
+ Define the base OS/image for your image
 
+-------------------------------------------
+2. RUN <command>
 
+execute any command in new layer on top of the current image and commit the result. RUN also has the shell from the running commands
+
+---------------------------------------------
+3. WORKDIR <directory>	
+
+Sets the working directory for any RUN, CMD, ENTRYPOINT, COPY, and ADD instructions that follow it in the Dockerfile.
+
+---------------------------------------------
+4. COPY <src> <dest>	
+
+Copies new files or directories from <src> and adds them to the filesystem of the container at the path <dest>.
+
+------------------------------------------------
+5. CMD <command>	
+
+Lets you define the default program that is run once you start the container based on this image. Each Dockerfile only has one CMD, and only the last CMD instance is respected when multiple exist.
+
+-----------------------------------------------
