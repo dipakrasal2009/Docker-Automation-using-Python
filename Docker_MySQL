@@ -1,0 +1,21 @@
+first Downloade the docker image 
+
+#docker pull mysql
+---------------------------------------------------------------
+to run the image it will geive the envirounment veriable
+
+#docker run -dit --name DB1 -e MYSQL_ROOT_PASSWORD=ubuntu -e MYSQL_USER=dipak -e MYSQL_PASSWORD=ubuntu -e MYSQL_DATABASE=MyDB mysql
+
+this command start the mysql image
+-----------------------------------------------------------------
+to run mysql in interactive mode
+
+#docker exec -it DB1 bash
+this command is open the bash
+
+bash# mysql -u dipak -p
+Enter Password ubuntu
+
+it will open the mysql server
+-------------------------------------------------------------
+then use it 
