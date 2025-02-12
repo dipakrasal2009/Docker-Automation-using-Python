@@ -1,0 +1,87 @@
+1834  mkdir Docker_MultistageBuild
+ 1835  cd Docker_MultistageBuild/
+ 1836  ls
+ 1837  cd Dockerfile
+ 1838  vim Dockerfile
+ 1839  docker build -t opt:v1 .
+ 1840  docker pull gcc:6
+ 1841  clear
+ 1842  docker build -t opt:v1 .
+ 1843  docker images
+ 1844  docker run opt:v1
+ 1845  vim Dockerfile
+ 1846  docker build -t opt:v1 .
+ 1847  vim Dockerfile
+ 1848  docker build -t opt:v1 .
+ 1849  docker build -t opt:v2 .
+ 1850  docker images
+ 1851  docker run opt:v2
+ 1852  docker rmi -f opt:v1
+ 1853  docker images
+ 1854  vim Dockerfile
+ 1855  clear
+ 1856  docker images
+ 1857  docker rmi -f opt:v2
+ 1858  docker rmi -f 2fbf9f824d5d
+ 1859  clear
+ 1860  docker images
+ 1861  clear
+ 1862  docker build -t opt:v1 .]
+ 1863  docker build -t opt:v1 .
+ 1864  docker images
+ 1865  vim Dockerfile
+ 1866  docker build -t opt:v2 .
+ 1867  docker images
+ 1868  vim Dockerfile
+ 1869  docker build -t opt:v3 .
+ 1870  docker images
+ 1871  vim Dockerfile
+ 1872  docker build -t opt:v4 .
+ 1873  docker images
+ 1874  docker images | grep
+ 1875  docker images | grep opt
+ 1876  clear
+ 1877  docker run opt:v1
+ 1878  docker run opt:v2
+ 1879  docker run opt:v3
+ 1880  docker run opt:v4
+ 1881  vim Dockerfile
+ 1882  docker images
+ 1883  docker rmi opt:v3
+ 1884  docker rmi -f opt:v3
+ 1885  docker rmi -f opt:v4
+ 1886  clear
+ 1887  vim Dockerfile
+ 1888  docker build -t opt:v3 .
+ 1889  docker images
+ 1890  vim Dockerfile
+ 1891  docker build -t opt:v3 .
+ 1892  vim Dockerfile
+ 1893  clear
+ 1894  docker build -t opt:v3 .
+ 1895  vim Dockerfile
+ 1896  docker build -t opt:v4 .
+ 1897  docker images
+ 1898  docker history opt:4
+ 1899  docker history opt:v4
+ 1900  docker history opt:v3
+ 1901  docker history opt:v2
+ 1902  docker history opt:v1
+ 1903  clear
+ 1904  docker images | grep opt
+ 1905  clear
+ 1906  ls
+ 1907  clear
+ 1908  vim Dockerfile 
+ 1909  clear
+ 1910  ls
+ 1911  clear
+ 1912  cd ..
+ 1913  ls
+ 1914  clear
+ 1915  git status
+ 1916  git add Docker_MultistageBuild/
+ 1917  git status
+ 1918  git commit -m "in this docker file i work with the multi-stage build and image optimization reduce the image sizes"
+ 1919  git push
+
